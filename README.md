@@ -39,25 +39,27 @@ In order to gain a deeper understanding of our dataset, we conducted visualizati
 
 For the categorical variables, we started by creating bar plots to display the unique values and their respective frequencies. These bar plots provide a comprehensive overview of the different categories present in the dataset and allow us to observe the relative occurrence of each category. Although we have only included a few examples in this report, the complete set of bar plots can be found in our code.
 
-  
+![enter image description here](https://github.com/leonardo805C0/758501/blob/main/images/airplane_line.png)  
+
+![enter image description here](https://github.com/leonardo805C0/758501/blob/main/images/class.png)
 
 Moving on to the numerical variables, our objective was to examine their distributions more closely. To achieve this, we generated histograms where the x-axis represents the variable values and the y-axis represents the frequency of those values. By analyzing these histograms, we gain insights into the distribution patterns and the range of values for each numerical variable.
 
 The most important is price, which is our response variable. It has a huge 0 spike that we must solve to do linear models such as linear regression. Days left is another strange distribution since it could be also treated as a categorical. But since there are many variables we prefer to maintain it as numerical.
 
-
+![enter image description here](https://github.com/leonardo805C0/758501/blob/main/images/duration.png)
   
 
 Finally, in order to gain deeper insights into the distribution of variables within our dataset, we created boxplots for each categorical variable with respect to each numerical one. This form of visualization enables us to identify the median values and pinpoint any outliers.
 
   
-  
+  ![enter image description here](https://github.com/leonardo805C0/758501/blob/main/images/duration%20vs%20airline.png)
 
 
 
 Here we can see the relation between duration and airline and we see that Vistara and Air_India are the one with the most outliers
 
-  
+  ![enter image description here](https://github.com/leonardo805C0/758501/blob/main/images/price%20vs%20classes.png)
 
 
 This is another useful graph to see at first glance that price goes up with the business class but thanks to some outliers some economy class che reach the business class prices.
@@ -85,6 +87,8 @@ With the ‘corr’ method, we performed a correlation matrix of the encoded Dat
   
 
 Since there were too many variables and the matrix was too big (we have many dummy variables) we managed to extrapolate only the price line of the correlation matrix.
+
+![enter image description here](https://github.com/leonardo805C0/758501/blob/main/images/correlation%20line.png)
 
 In general, there are not many outstanding relationships except for the ‘class_Economy’ variable which has -0.94 and thus will become one of the best predictors for our models.
 
