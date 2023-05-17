@@ -126,7 +126,8 @@ The result was not the best but if we remove the 0 spike it was acceptable. It i
 
 By applying the SelectKBest class we performed a feature selection selecting the top 5 features based on the F-regression test. The selected feature indices and names are stored in selected_features_indices and selected_features_names, respectively and they are 'airline_GO_FIRST', 'airline_Indigo', 'airline_Vistara', 'class_Economy', 'duration_y'.
 
-This is just a method to see which are the most important predictors without training a model first so when we find our best model we will also compute a SHAP analysis to see how the predictors contribute to the final prediction and which are the most important.
+This is just a method to see which are the most important predictors without training a model first, but they are not the only variables we are going to use in our models.
+In fact to not lose any informations, since the variables were not too many and there wasn't any particularly useless variables, we decided to keem them all for the training of our models.
 
   
 
@@ -136,7 +137,7 @@ Before moving to modeling we should say that the metrics we chose to assess the 
 
   
 
-R-squared measures the proportion of variation in the target variable that the model explains, while RMSE measures the magnitude of the error between the model's predictions and the actual values. Evaluating both metrics allows for a better understanding of the strengths and weaknesses of each model and enables the selection of the best performing one.
+R-squared measures the proportion of variation in the target variable that the model explains, while RMSE measures the magnitude of the error between the model's predictions and the actual values. Evaluating both metrics allows for a better understanding of the strengths and weaknesses of each model and enables the selection of the best-performing one.
 
 On the one hand, RMSE is advantageous because it maintains the same scale as the predicted variable, allowing for a more intuitive interpretation of the error in the model's predictions. On the other hand, R-squared provides a means of comparing the performance of different models, as it ranges from 0 to 1, with higher values indicating a better fit to the data.
 
@@ -228,3 +229,9 @@ The second best model would be the hist gradient boosting. Also if the random fo
 ### 4 - Main takeaways
 
 Our main takeaways from this project are the ability to work with heavy datasets, the selection of the variables and how to compare models not only by numbers but by efficiency and performance.
+
+### 5 - applications, sites and extern help for the composition of the code
+
+We should say that the ideas behind the code was ours only but we obviously got the help of many sites to better understand the libraries and better write our code. 
+Stack overflow and Chat gpt were very useful for debugging. Sites of the libraries with their own examples were very useful to attuate their models and methods.
+Also github repositories came in help mainly to learn optuna and how to use it with neural network and xgboost with dmatrices
