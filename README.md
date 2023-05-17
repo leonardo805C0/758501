@@ -1,6 +1,6 @@
 ﻿# AIRPLANE FARE PREDICTION
 
-Leonardo Bosco, Edoardo D’Onghia, Francesco Mazzilli
+Leonardo Bosco (Captain), Edoardo D’Onghia, Francesco Mazzilli
 
 ### Introduction
 
